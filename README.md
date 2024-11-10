@@ -3,7 +3,7 @@
 Dependencies:
 ```
 zsh
-oh_my_zsh
+ohmyzsh
 zsh-syntax-highlighting
 powerlevel10k
 nerdfont
@@ -16,7 +16,7 @@ ArchLinux - `pacman -Sy zsh`
 Debian/Ubuntu - `apt install zsh`
 Fedora - `dnf install zsh`
 
-### oh_my_zsh
+### ohmyzsh
 Git - https://github.com/ohmyzsh/ohmyzsh
 
 Install:
