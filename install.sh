@@ -3,13 +3,13 @@
 distro_id=$(grep '^ID=' /etc/os-release | cut -d'=' -f2 | tr -d '"')
 
 if [[ "$distro_id" == "debian" || "$distro_id" == "ubuntu" || "$distro_id" == "linuxmint" ]]; then
-    apt install git zsh curl wget
+    sudo apt install git zsh curl wget -y
     
 elif [[ "$distro_id" == "arch" || "$distro_id" == "manjaro" || "$distro_id" == "endeavouros" ]]; then
-    pacman -Sy zsh git curl wget
+    sudo pacman -Sy zsh git curl wget --noconfirm
     
 elif [[ "$distro_id" == "fedora" || "$distro_id" == "rocky" || "$distro_id" == "almalinux" ]]; then
-    dnf install git zsh curl wget
+    sudo dnf install git zsh curl wget
 else
     echo "???: $distro_id"
 fi
