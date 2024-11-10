@@ -27,3 +27,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 echo "Installing nerdfont - MesloLGS NF Regular"
 sudo wget -O "/usr/share/fonts/MesloLGS NF Regular.ttf" "https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"
 
+
+echo "Coping files"
+cp .zshrc ~
+cp .p10k.zsh ~
