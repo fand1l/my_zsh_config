@@ -5,11 +5,21 @@ Dependencies:
 zsh
 ohmyzsh
 zsh-syntax-highlighting
+zsh-autosuggestions
 powerlevel10k
 nerdfont
 ```
 
-## Install dependencies
+## Install (with my script)
+```sh
+git clone https://github.com/fand1l/my_zsh_config
+cd my_zsh_config
+chmod +x install.sh
+./install.sh
+```
+
+
+## Install dependencies (manual)
 ### zsh
 Install from your package manager:
 ArchLinux - `pacman -Sy zsh`
@@ -32,6 +42,14 @@ Install:
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
+### zsh-autosuggestions
+Git - 
+
+Install:
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
 ### powerlevel10k
 Git - https://github.com/romkatv/powerlevel10k
 
@@ -46,4 +64,10 @@ Install the font and select it in the terminal settings (or configuration)
 I use MesloLGS Nerd Font from https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#fonts
 
 
-install script soon
+## Install config
+```sh
+git clone https://github.com/fand1l/my_zsh_config
+cd my_zsh_config
+cp .zshrc ~
+cp .p10k.zsh ~
+```
