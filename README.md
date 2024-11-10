@@ -62,4 +62,3 @@ cd my_zsh_config
 cp .zshrc ~
 cp .p10k.zsh ~
 ```
-```
